@@ -1,0 +1,7 @@
+main{
+    min-height: 80vh;
+}
+
+.txt:hover {
+    text-decoration: underline;
+}
