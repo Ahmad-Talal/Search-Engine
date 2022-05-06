@@ -59,8 +59,9 @@ const  AllScreen=({history})=> {
         dispatch({type:All_SEARCH_REQUEST})
 
         async function createSearch(){
-                  
-            try{              
+                
+            try{
+                //creating user in database              
                 await axios.post(
                 `https://ahmadtalal.pythonanywhere.com/api/search/create/${user}/`,
                 {"search":temp},
