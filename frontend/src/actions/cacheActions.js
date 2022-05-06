@@ -8,7 +8,7 @@ import axios from 'axios'
 export const searchCache = (user) =>async (dispatch)=>{
     try{
         const {data} =await axios.get(
-            `http://ec2-3-144-183-187.us-east-2.compute.amazonaws.com/api/search/get/${user}/`
+            `https://ahmadtalal.pythonanywhere.com/api/search/get/${user}/`
             )
         dispatch({
                   type:CACHE_SEARCH_SUCCESS,

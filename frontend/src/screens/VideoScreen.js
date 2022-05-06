@@ -64,7 +64,7 @@ const  VideoScreen=({history})=> {
                   
             try{              
                 await axios.post(
-                `http://ec2-3-144-183-187.us-east-2.compute.amazonaws.com/api/search/create/${user}/`,
+                `https://ahmadtalal.pythonanywhere.com/api/search/create/${user}/`,
                 {"search":temp},
                 )
             }

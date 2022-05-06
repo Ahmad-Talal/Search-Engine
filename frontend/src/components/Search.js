@@ -29,7 +29,7 @@ const Search = () => {
                   
             try{              
             const {data} =await axios.post(
-                `http://ec2-3-144-183-187.us-east-2.compute.amazonaws.com/api/cookie/create/`,
+                `https://ahmadtalal.pythonanywhere.com/api/cookie/create/`,
                 {},
                 )
             localStorage.setItem('user', JSON.stringify(data._id))
@@ -56,7 +56,7 @@ const Search = () => {
                   
             try{              
                 await axios.post(
-                `http://ec2-3-144-183-187.us-east-2.compute.amazonaws.com/api/search/create/${user}/`,
+                `https://ahmadtalal.pythonanywhere.com/api/search/create/${user}/`,
                 {"search":temp},
                 )
             }
