@@ -7,6 +7,7 @@ import axios from 'axios'
 
 export const searchWeather = (loc) =>async (dispatch)=>{
     try{
+	console.log(loc)
         const options = {
             method: 'GET',
             url: 'https://weatherapi-com.p.rapidapi.com/current.json',
@@ -29,5 +30,6 @@ export const searchWeather = (loc) =>async (dispatch)=>{
               //console.error(error);
           });
     }catch(error){
-    }   
+	    console.log(error);
+    }
 }
